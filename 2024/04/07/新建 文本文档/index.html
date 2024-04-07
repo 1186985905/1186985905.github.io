@@ -11,7 +11,7 @@
 
   
   <title>
-    text5 |
+    时间复杂度的基础知识 |
     
     Hexo
   </title>
@@ -25,13 +25,15 @@
   
 <link rel="stylesheet" href="/css/loader.css">
 
-  <meta property="og:type" content="article">
-<meta property="og:title" content="text5">
-<meta property="og:url" content="http://example.com/2024/04/05/text5/index.html">
+  <meta name="description" content="1.时间复杂度的基本概念 时间复杂度是为了估量算法运行时间而引进的概念，时间复杂度的基本与“执行次数”挂钩。 常用O(n)代表n次执行次数，又称“大O计数法”。 2.时间复杂度的计算 示例： int main(void) { printf(“一键三连\n”) #执行1次# return 0； #执行1次# } 共执行2次； int main() { int n； for(int i&#x3D;0;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="时间复杂度的基础知识">
+<meta property="og:url" content="http://example.com/2024/04/07/%E6%96%B0%E5%BB%BA%20%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.时间复杂度的基本概念 时间复杂度是为了估量算法运行时间而引进的概念，时间复杂度的基本与“执行次数”挂钩。 常用O(n)代表n次执行次数，又称“大O计数法”。 2.时间复杂度的计算 示例： int main(void) { printf(“一键三连\n”) #执行1次# return 0； #执行1次# } 共执行2次； int main() { int n； for(int i&#x3D;0;">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-04-05T15:25:50.000Z">
-<meta property="article:modified_time" content="2024-04-05T15:25:50.396Z">
+<meta property="article:published_time" content="2024-04-07T06:50:25.193Z">
+<meta property="article:modified_time" content="2024-04-07T06:52:30.441Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -155,7 +157,7 @@
 </div>
 <header id="header">
   
-    <img fetchpriority="high" src="/images/banner.jpg" alt="text5">
+    <img fetchpriority="high" src="/images/banner.jpg" alt="时间复杂度的基础知识">
   
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
@@ -164,7 +166,7 @@
           
           
             <a href="/" id="logo">
-              <h1>text5</h1>
+              <h1>时间复杂度的基础知识</h1>
             </a>
           
         
@@ -181,12 +183,12 @@
 
         <div id="content" class="outer">
           
-          <section id="main"><article id="post-text5" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+          <section id="main"><article id="post-新建 文本文档" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
     <div class="article-meta">
       <div class="article-date wow slideInLeft">
-  <a href="/2024/04/05/text5/" class="article-date-link">
-    <time datetime="2024-04-05T15:25:50.000Z" itemprop="datePublished">2024-04-05</time>
+  <a href="/2024/04/07/%E6%96%B0%E5%BB%BA%20%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/" class="article-date-link">
+    <time datetime="2024-04-07T06:50:25.193Z" itemprop="datePublished">2024-04-07</time>
   </a>
 </div>
 
@@ -198,11 +200,40 @@
 
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <p>1.时间复杂度的基本概念</p>
+<p>时间复杂度是为了估量算法运行时间而引进的概念，时间复杂度的基本与“执行次数”挂钩。</p>
+<p>常用O(n)代表n次执行次数，又称“大O计数法”。</p>
+<p>2.时间复杂度的计算</p>
+<p>示例：</p>
+<p>int main(void)</p>
+<p>{</p>
+<p>printf(“一键三连\n”) #执行1次#</p>
+<p>return 0； #执行1次#</p>
+<p>}</p>
+<p>共执行2次；</p>
+<p>int main()</p>
+<p>{</p>
+<p>int n；</p>
+<p>for(int i&#x3D;0;i&lt;n;i++) #int i&#x3D;0执行1次；i&lt;n执行n+1次；i++执行n次#</p>
+<p>{</p>
+<p>printf(“%d\n”,i); #执行n次#</p>
+<p>}</p>
+<p>return 0； #执行1次#</p>
+<p>}</p>
+<p>共执行3n+3次；</p>
+<p>二者分别执行2次与3n+3次，表示为T(n)&#x3D;2,T(n)&#x3D;3n+3,但是将执行次数转化为大O计数法时，常数可以简略；</p>
+<p>时间复杂度最终分别为1，n；</p>
+<p>若有三个算法，其总执行次数如下：</p>
+<p>T(n)&#x3D;9999;</p>
+<p>T(n)&#x3D;2n+1</p>
+<p>T(n)&#x3D;n^3+n^2+2n; （若有多个次方，保留最大的次方数）</p>
+<p>则时间复杂度可分别表示为1，n，n^3。</p>
+<p>以上是对于时间复杂度的粗浅理解，若有不当之处请多多指正。</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/04/05/text5/" data-id="clumtivmb0000goxb9y4lhbrx" data-title="text5" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2024/04/07/%E6%96%B0%E5%BB%BA%20%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/" data-id="clup63dia0000toxba1yh2twf" data-title="时间复杂度的基础知识" class="article-share-link">Share</a>
       
       
       
@@ -221,14 +252,14 @@
       
         
         
-          <img data-src="/images/banner.jpg" data-sizes="auto" alt="test3" class="lazyload">
+          <img data-src="/images/banner.jpg" data-sizes="auto" alt="Hello World" class="lazyload">
         
       
-      <a href="/2024/04/05/test3/"></a>
+      <a href="/2024/04/04/hello-world/"></a>
       <div class="article-nav-caption">Older</div>
       <h3 class="article-nav-title">
         
-          test3
+          Hello World
         
       </h3>
     </div>
@@ -262,7 +293,7 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>Posts</div>
-    <div class="sidebar-state-number">4</div>
+    <div class="sidebar-state-number">2</div>
   </div>
   <div class="sidebar-state-category">
     <div>Categories</div>
@@ -340,10 +371,10 @@
       
         <div>
           <span class="icon-brush"></span>
-          75
+          373
           &nbsp;|&nbsp;
           <span class="icon-coffee"></span>
-          00:04
+          00:02
         </div>
       
       
@@ -381,7 +412,7 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>Posts</div>
-    <div class="sidebar-state-number">4</div>
+    <div class="sidebar-state-number">2</div>
   </div>
   <div class="sidebar-state-category">
     <div>Categories</div>
