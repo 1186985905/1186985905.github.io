@@ -33,7 +33,7 @@
 <meta property="og:description" content="​ 一.蓝桥杯简介        蓝桥杯全国软件和信息技术专业人才大赛，是由工业和信息化部人才交流中心举办的全国性IT学科赛事。大赛共包括三个竞赛组别，个人赛-软件类，个人赛-电子类，以及视觉艺术大赛。其中个人赛-软件类的比赛科目包括C&#x2F;C++程序设计、Java软件开发、Python程序设计。 二.双指针        在历届中双指针这个算法出现的频率不是太高，但总归还是会考，我们想要搞">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-04-14T11:01:34.506Z">
-<meta property="article:modified_time" content="2024-04-14T11:03:01.971Z">
+<meta property="article:modified_time" content="2024-05-19T03:40:17.403Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -210,12 +210,12 @@
     移动零
 </code></pre>
 <p>三.二分法<br>·        二分法又叫折半查找法，原理是将一个有序的数组分为两半从中间位置开始搜索的算法，如果当前查找数据小于目标数据则将中间位置的下一位替换为左边界，如果当前查找数据大于目标数则将中间位置的上一位替换为右边界，依照上面的流程逐次查找，直至得到目标数值。时间复杂度为O(logn)。</p>
+<p>​        </p>
 <pre><code>    卡牌
 
     分巧克力
-
-    
 </code></pre>
+<p>​        </p>
 <p>&#x2F;&#x2F;例题 分巧克力<br>&#x2F;&#x2F;题意大概是有k个小盆友，n块巧克力，第i块巧克力有H(i)与W(i)的高度与宽度<br>&#x2F;&#x2F;问你如何将巧克力分成长宽相等的巧克力分给小盆友，且巧克力越大越好。<br>#include<iostream><br>using namespace std;<br>const int N&#x3D;1e5+10;<br>int num[N][2];<br>int n,k;</p>
 <p>bool check(int mid)<br>{<br>    int sum&#x3D;0;<br>    for(int i&#x3D;0;i&lt;n;i++)<br>    sum+&#x3D;(num[i][1]&#x2F;mid)*(num[i][0]&#x2F;mid);</p>
 <pre><code>if(sum&gt;=k)
@@ -242,6 +242,7 @@ return 0;
 </code></pre>
 <p>}</p>
 <p>四.dfs(深度优先搜索)<br>        深度优先搜索是一种一条路走到底的搜索方式，利用了递归的原理。</p>
+<p>​        </p>
 <pre><code>    如图，深度优先搜索的步骤是从左到右，从上到下的开始进行数组的遍历与查找来实现查找最优方式的一种算法，大致流程是从1开始查找，向左下查找直至到尽头，再返回上一级开始向右下开始查找直到尽头，如此往复，直至查完整个数组。
 
     飞机降落
@@ -249,9 +250,8 @@ return 0;
     买瓜
 
    例题 分糖果
-
-    
 </code></pre>
+<p>​        </p>
 <p>&#x2F;&#x2F;例题 分糖果<br>&#x2F;&#x2F;题意大概是有两种糖果分别是16个与9个，要分给7个小盆友，每个人最少2个最多5个<br>&#x2F;&#x2F;问你有几种分法<br>#include<iostream><br>using namespace std;<br>typedef long long ll;<br>ll num&#x3D;0;</p>
 <p>void dfs(int x,int y,int z)<br>{<br>    if(x&gt;&#x3D;7)<br>    {<br>        if(y&#x3D;&#x3D;0&amp;&amp;z&#x3D;&#x3D;0)<br>        num++;<br>        return ;<br>    }</p>
 <pre><code>for(int i=0;i&lt;=y;i++)
@@ -267,7 +267,6 @@ return ;
 <p>}</p>
 <p>int main()<br>{<br>    dfs(0,9,16);<br>    cout&lt;&lt;num&lt;&lt;endl;<br>    return 0;<br>}</p>
 <p>五.总结<br>        总结了这段时间里的一些微末的见解，希望能在此基础上提升我算法的能力，早日弥补这个短板。如果能够你带来一点帮助我感到不胜荣幸。</p>
-<p>​</p>
 
       
     </div>
