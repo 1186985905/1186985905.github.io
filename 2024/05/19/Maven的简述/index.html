@@ -11,6 +11,7 @@
 
   
   <title>
+    Maven的简述 |
     
     Hexo
   </title>
@@ -24,15 +25,15 @@
   
 <link rel="stylesheet" href="/css/loader.css">
 
-  <meta name="description" content="title: Maven的简述 前言提示：这里可以添加本文要记录的大概内容： 例如：随着人工智能的不断发展，机器学习这门技术也越来越重要，很多人都开启了学习机器学习，本文就介绍了机器学习的基础内容。  提示：以下是本篇文章正文内容，下面案例可供参考 一、Maven的概念maven是一个专门用于项目管理和构建的工具，它基于对象模型（POM）的概念，通过一小段描述信息来管理项目的构建，报告，以及文档">
+  <meta name="description" content="一、Maven的概念maven是一个专门用于项目管理和构建的工具，它基于对象模型（POM）的概念，通过一小段描述信息来管理项目的构建，报告，以及文档。同时它具有声明式的特性，用户无需关心构建工具的实现细节，只需在 pom.xml 中配置好项目名，依赖等基础信息即可。但是也相对复杂。 二、Maven的依赖管理Maven的依赖管理系统是一个高度自动化的工具，它极大地简化了Java项目中库和插件的管理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Maven的简述">
 <meta property="og:url" content="http://example.com/2024/05/19/Maven%E7%9A%84%E7%AE%80%E8%BF%B0/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: Maven的简述 前言提示：这里可以添加本文要记录的大概内容： 例如：随着人工智能的不断发展，机器学习这门技术也越来越重要，很多人都开启了学习机器学习，本文就介绍了机器学习的基础内容。  提示：以下是本篇文章正文内容，下面案例可供参考 一、Maven的概念maven是一个专门用于项目管理和构建的工具，它基于对象模型（POM）的概念，通过一小段描述信息来管理项目的构建，报告，以及文档">
+<meta property="og:description" content="一、Maven的概念maven是一个专门用于项目管理和构建的工具，它基于对象模型（POM）的概念，通过一小段描述信息来管理项目的构建，报告，以及文档。同时它具有声明式的特性，用户无需关心构建工具的实现细节，只需在 pom.xml 中配置好项目名，依赖等基础信息即可。但是也相对复杂。 二、Maven的依赖管理Maven的依赖管理系统是一个高度自动化的工具，它极大地简化了Java项目中库和插件的管理">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-05-19T13:53:10.228Z">
-<meta property="article:modified_time" content="2024-05-21T02:38:38.580Z">
+<meta property="article:modified_time" content="2024-05-21T11:53:32.554Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -156,7 +157,7 @@
 </div>
 <header id="header">
   
-    <img fetchpriority="high" src="/images/banner.jpg" alt="">
+    <img fetchpriority="high" src="/images/banner.jpg" alt="Maven的简述">
   
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
@@ -165,7 +166,7 @@
           
           
             <a href="/" id="logo">
-              <h1>Hexo</h1>
+              <h1>Maven的简述</h1>
             </a>
           
         
@@ -200,11 +201,6 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="title-Maven的简述"><a href="#title-Maven的简述" class="headerlink" title="title: Maven的简述"></a>title: Maven的简述</h2><hr>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><code>提示：这里可以添加本文要记录的大概内容：</code></p>
-<p>例如：随着人工智能的不断发展，机器学习这门技术也越来越重要，很多人都开启了学习机器学习，本文就介绍了机器学习的基础内容。</p>
-<hr>
-<p><code>提示：以下是本篇文章正文内容，下面案例可供参考</code></p>
 <h1 id="一、Maven的概念"><a href="#一、Maven的概念" class="headerlink" title="一、Maven的概念"></a>一、Maven的概念</h1><p>maven是一个专门用于项目管理和构建的工具，它基于对象模型（POM）的概念，通过一小段描述信息来管理项目的构建，报告，以及文档。同时它具有声明式的特性，用户无需关心构建工具的实现细节，只需在 pom.xml 中配置好项目名，依赖等基础信息即可。但是也相对复杂。</p>
 <h1 id="二、Maven的依赖管理"><a href="#二、Maven的依赖管理" class="headerlink" title="二、Maven的依赖管理"></a>二、Maven的依赖管理</h1><p>Maven的依赖管理系统是一个高度自动化的工具，它极大地简化了Java项目中库和插件的管理。通过在项目的pom.xml文件中声明依赖关系，Maven能够自动处理依赖的下载、解析和版本控制。这个系统支持传递性依赖，意味着如果一个依赖本身还依赖其他库，Maven会递归地解析并管理这些间接依赖。此外，Maven提供了依赖范围的概念，允许开发者指定依赖在不同构建阶段的可用性，例如compile、test、provided等，以及是否包含在最终的构建产物中。</p>
 <p>Maven具备强大的依赖冲突解决机制，采用”最近优先”原则来选择依赖的版本，这有助于避免版本冲突。如果项目中存在多个版本的相同依赖，Maven会选择路径最短的那个版本。此外，Maven允许开发者通过<exclusions>标签排除特定的依赖，以解决潜在的依赖冲突或不必要的依赖传递。<br>总的来说，Maven的依赖管理系统通过自动化、集中化和智能化的方式，为Java项目提供了一个强大而灵活的依赖解决方案，极大地提高了开发效率和项目的可维护性。</p>
@@ -215,7 +211,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/05/19/Maven%E7%9A%84%E7%AE%80%E8%BF%B0/" data-id="clwfse6aq0000i8fs2y241djq" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2024/05/19/Maven%E7%9A%84%E7%AE%80%E8%BF%B0/" data-id="clwfse6aq0000i8fs2y241djq" data-title="Maven的简述" class="article-share-link">Share</a>
       
       
       
@@ -264,7 +260,7 @@
     
       <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
   <h3 class="toc-title">Contents</h3>
-  <div class="sidebar-toc-wrapper"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title-Maven%E7%9A%84%E7%AE%80%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">title: Maven的简述</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number"></span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81Maven%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number"></span> <span class="toc-text">一、Maven的概念</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81Maven%E7%9A%84%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86"><span class="toc-number"></span> <span class="toc-text">二、Maven的依赖管理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81Maven%E7%9A%84%E9%87%8D%E8%A6%81%E7%BB%84%E6%88%90%E2%80%94%E2%80%94POM"><span class="toc-number"></span> <span class="toc-text">三、Maven的重要组成——POM</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">概念：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number"></span> <span class="toc-text">总结</span></a></div>
+  <div class="sidebar-toc-wrapper"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81Maven%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">1.</span> <span class="toc-text">一、Maven的概念</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81Maven%E7%9A%84%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">二、Maven的依赖管理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81Maven%E7%9A%84%E9%87%8D%E8%A6%81%E7%BB%84%E6%88%90%E2%80%94%E2%80%94POM"><span class="toc-number">3.</span> <span class="toc-text">三、Maven的重要组成——POM</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5%EF%BC%9A"><span class="toc-number">3.1.</span> <span class="toc-text">概念：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">4.</span> <span class="toc-text">总结</span></a></li></ol></div>
 </div>
 </div>
       <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
@@ -353,7 +349,7 @@
       
         <div>
           <span class="icon-brush"></span>
-          2k
+          1.9k
           &nbsp;|&nbsp;
           <span class="icon-coffee"></span>
           00:07
@@ -383,7 +379,7 @@
     
       <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
   <h3 class="toc-title">Contents</h3>
-  <div class="sidebar-toc-wrapper"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title-Maven%E7%9A%84%E7%AE%80%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">title: Maven的简述</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number"></span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81Maven%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number"></span> <span class="toc-text">一、Maven的概念</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81Maven%E7%9A%84%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86"><span class="toc-number"></span> <span class="toc-text">二、Maven的依赖管理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81Maven%E7%9A%84%E9%87%8D%E8%A6%81%E7%BB%84%E6%88%90%E2%80%94%E2%80%94POM"><span class="toc-number"></span> <span class="toc-text">三、Maven的重要组成——POM</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">概念：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number"></span> <span class="toc-text">总结</span></a></div>
+  <div class="sidebar-toc-wrapper"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81Maven%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">1.</span> <span class="toc-text">一、Maven的概念</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81Maven%E7%9A%84%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">二、Maven的依赖管理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81Maven%E7%9A%84%E9%87%8D%E8%A6%81%E7%BB%84%E6%88%90%E2%80%94%E2%80%94POM"><span class="toc-number">3.</span> <span class="toc-text">三、Maven的重要组成——POM</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5%EF%BC%9A"><span class="toc-number">3.1.</span> <span class="toc-text">概念：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">4.</span> <span class="toc-text">总结</span></a></li></ol></div>
 </div>
 </div>
       <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
